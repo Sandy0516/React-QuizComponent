@@ -17,10 +17,11 @@ class Quiz extends Component {
 
     }
 
-    constructor(props) {
-        super(props);
-        this.state = { quiz_position: 1 }
-    }
+    state = { quiz_position: 1 }
+    // constructor(props) {
+    //     super(props);
+    //     this.state = { quiz_position: 1 }
+    // }
     render() {
         const isQuizEnd = ((this.state.quiz_position - 1) === quizData.quiz_questions.length)
         return (
